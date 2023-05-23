@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./main.css" />
+	</head>
+	<body>
+		<article>
+			<section>
+				<div class="grid">
+					<div>
+						<label for="small">Small</label>
+					</div>
+					<div>
+						<button class="modifier" onclick="Decrement(this)">-</button>
+						<input
+							id="small"
+							type="number"
+							min="0"
+							step="1"
+							oninput="validity.valid||(value='');"
+						/>
+						<button class="modifier" onclick="Increment(this)">+</button>
+					</div>
+				</div>
+				<div class="grid">
+					<div>
+						<label for="medium">Medium</label>
+					</div>
+					<div>
+						<button class="modifier" onclick="Decrement(this)">-</button>
+						<input
+							id="medium"
+							type="number"
+							min="0"
+							step="1"
+							oninput="validity.valid||(value='');"
+						/>
+						<button class="modifier" onclick="Increment(this)">+</button>
+					</div>
+				</div>
+				<div class="grid">
+					<div>
+						<label for="large">Large</label>
+					</div>
+					<div>
+						<button class="modifier" onclick="Decrement(this)">-</button>
+						<input
+							id="large"
+							type="number"
+							min="0"
+							step="1"
+							oninput="validity.valid||(value='');"
+						/>
+						<button class="modifier" onclick="Increment(this)">+</button>
+					</div>
+				</div>
+				<div class="grid">
+					<div>
+						<label for="extraLarge">Extra-Large</label>
+					</div>
+					<div>
+						<button class="modifier" onclick="Decrement(this)">-</button>
+						<input
+							id="extraLarge"
+							type="number"
+							min="0"
+							step="1"
+							oninput="validity.valid||(value='');"
+						/>
+						<button class="modifier" onclick="Increment(this)">+</button>
+					</div>
+				</div>
+				<button onclick="Calculate()" id="calculate">Calculate</button>
+			</section>
+			<section id="totalContainer">
+				<p id="total"></p>
+			</section>
+		</article>
+		<script src="./main.js" />
+	</body>
+</html>
