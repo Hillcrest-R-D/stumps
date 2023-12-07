@@ -1,0 +1,35 @@
+article {
+    height: 75vh;
+}
+.columns{
+    display: grid;
+    height: 100%;
+    grid-template-columns: 90% 5% 5%;
+    transition: all .5s ease-in-out;
+}
+.columns>.col{
+    grid-column: auto;
+    height:100%;
+}
+.columns>.expanded{
+    /* grid-column: 1/11; */
+}
+
+.col {
+    background-color: grey;
+    border: .2rem solid black;
+    transition: all .5s linear;
+}
+
+form {
+    margin:auto;
+    width: fit-content;
+    overflow-x: hidden;
+    position: absolute;
+    translate: 50%;
+    grid-column: 
+}
+h1 {
+    margin:auto;
+    width: fit-content;
+}
